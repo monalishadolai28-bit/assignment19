@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    char toss;
+
+    printf("Enter H for Head or T for Tail: ");
+    scanf(" %c", &toss); // Note the space before %c
+
+    if (toss == 'H' || toss == 'h')
+        printf("It is Head.\n");
+    else if (toss == 'T' || toss == 't')
+        printf("It is Tail.\n");
+    else
+        printf("Invalid input.\n");
+
+    return 0;
+}
